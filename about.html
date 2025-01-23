@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNBC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    .jsAA {
+        font-size: 40px;
+        color: rgb(178, 36, 36);
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: "Lora", serif;
+        text-align: center;
+        padding-top: 20px;
+
+    }
+
+    .footer {
+        background: linear-gradient(145deg, #1a1c23, #242730);
+        color: #ffffff;
+     
+    }
+
+    span {
+
+        font-size: 19px;
+        font-weight: 600;
+    }
+
+    .footer-title {
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+
+    .last {
+        font-size: 19px;
+    }
+
+    .footer-title::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 30px;
+        height: 2px;
+        background: #c94242;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 1rem;
+    }
+
+    .footer-links a {
+        color: #b4b6bb;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        color: #ffffff;
+        padding-left: 5px;
+    }
+
+    .social-links a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+        margin-right: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+        background: #c94242;
+        transform: translateY(-3px);
+    }
+
+    .input-group input::placeholder {
+        color: white;
+    }
+
+    .newsletter-input {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+    }
+
+    .newsletter-input:focus {
+        background: rgba(255, 255, 255, 0.15);
+        border-color: #6c5ce7;
+        color: #ffffff;
+        box-shadow: none;
+    }
+
+    .btn-subscribe {
+        background: #c94242;
+        border: none;
+        padding: 0.5rem 1.5rem;
+        transition: all 0.3s ease;
+    }
+
+    .btn-subscribe:hover {
+        background: #5a4bd1;
+        transform: translateY(-2px);
+    }
+
+    .footer-bottom {
+        background: #c94242;
+    }
+
+    .footer-bottom a {
+        color: #6c5ce7;
+        text-decoration: none;
+    }
+
+    .footer-bottom a:hover {
+        color: #ffffff;
+    }
+</style>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="logo text-center">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(46, 43, 43);">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sports.html">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="business.html">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="world.html">Today in World</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Countries News
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="china.html">China</a>
+
+                            <a class="dropdown-item" href="london.html">London</a>
+                            <a class="dropdown-item" href="singgapore.html">Singapore</a>
+                            <a class="dropdown-item" href="newyork.html">NewYork</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+
+
+    <h2 class="jsAA">About us</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-9 mt-5">
+                <div id="primary"> </div><br><br><br>
+                <h1>About The DNBC</h1><br>
+                <div class="social-icons">
+                    <div class="icone">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-reddit-alien"></i>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+
+                </div>
+                <br>
+                <p>Newsrooms across the world are gravely understaffed. The research desk is largely a thing of the
+                    past, and <br> many local reporters are stretched too thin to develop subject matter expertise in
+                    their
+                    multiple beats. <br> Fortunately, academic researchers do have such expertise, which they share in
+                    the
+                    form of scientific studies. <br>For resource-constrained journalists, academic research should be an
+                    essential tool to:
+            </div>
+            <div id="onediv" class="col-3 mt-5" style="background-color: #F1F2F2;">
+                <!-- <div id="primery"></div> -->
+                <br><br><br>
+                <button id="btn">KNOW YOUR RESEARCH</button><br><br>
+                <p>Tip sheets and explainers to help journalists understand academic research methods, find and
+                    recognize high-quality research, investigate scientific misconduct and research errors, and avoid
+                    missteps when reporting on new studies and public opinion polls.</p><br>
+                <hr>
+            </div>
+
+            <div class="col-9">
+                <ul>
+                    <li> Generate and successfully pitch story ideas.</li>
+                    <li>Thwart misinformation.</li>
+                    <li>Hold policymakers accountable.</li>
+                    <li>Bolster bare-bones news stories with well-vetted data.</li>
+                    <li>Shed light on potential solutions to societal problems. </li>
+                    <li>Offer insights into journalism itself.</li>
+                </ul>
+                <p> The problem is that many DNBC don’t know how to identify high-quality research or use it in
+                    their reporting, <br> don’t understand academic jargon or research methods, don’t have time to
+                    navigate
+                    lengthy journal articles, <br> and don’t realize what they don’t know about research — which can
+                    lead to
+                    reporting errors and erode <br> trust in journalism.</p>
+            </div>
+            <div class="col-3" style="background-color: #F1F2F2;">
+                <!-- <div id="primiry"></div>              -->
+                <!-- <p style="color: black; position: absolute; margin-top: 1%; text-decoration: solid;">Email
+                    Newsletter</p> -->
+                <br>
+                <button id="btn1">SUBSCRIBE. IT'S FREE</button><br><br>
+                <p>Sign up for our free newsletter! You’ll receive a weekly update of important new resources to inform
+                    your news coverage and consumption</p><br>
+                <hr>
+            </div>
+
+            <div class="col-9">
+                <h1>Our mission:</h1>
+
+                <p>The DNBC bridges the gap between academia and journalism, informing the news by
+                    empowering journalists to rely on academic research <b>throughout every step of the reporting and
+                        editing process.</b></p>
+
+                <p>Now in our second decade, we have become an invaluable source of information and material for
+                    thousands of journalists all over the world – and we hope to grow our operations and continue to be
+                    a trusted resource for decades to come.</p>
+
+                <h1>Who we are:</h1>
+                <p> <a href="">Carmen Nobel</a>, program director and editor-in-chief. She joined The Journalist’s
+                    Resource in 2018 after serving as
+                    senior editor of Harvard Business School Working Knowledge, where she wrote about economic research
+                    and forged content partnerships with Quartz, Forbes, HBR Ascend, and the World Economic Forum. Her
+                    work also has appeared in The Boston Globe, Boston Magazine, Inc., NPR Science Friday, PC Magazine,
+                    eWeek and McSweeney’s Internet Tendency. Nobel earned a bachelor’s degree in English from Tufts
+                    University and a master’s degree from the Medill School of Journalism. She grew up in Gorham, Maine.
+                    An interesting fact: As a child, Nobel sang backup on <a href=""> the theme song for “Bruce the
+                        Dental Health Moose.” @carmennobel</a></p>
+
+                <p><a href="">Denise-Marie Ordway,</a> <b>managing editor. </b> She joined The Journalist’s Resource in
+                    2015 after reporting for newspapers and radio stations in the U.S. and Central America, including
+                    the Orlando Sentinel and Philadelphia Inquirer. She received various national, regional and
+                    state-level journalism awards and, in 2013, was named as a Pulitzer Prize finalist for an
+                    investigative series she led. Ordway, a 2014-15 Fellow of Harvard’s Nieman Foundation for
+                    Journalism, serves on the board of directors to the national Education Writers Association. She
+                    attended Daytona Beach Community College, going on to earn a bachelor’s degree in communication from
+                    the University of North Florida and a master’s degree in higher education from the Harvard Graduate
+                    School of Education. Ordway grew up in Oak Hill, Florida. An interesting fact: Ordway wrote and sold
+                    a screenplay about abolitionist John Brown and his attempt in 1859 to start an armed revolt of
+                    enslaved people by raiding the national armory in Harpers Ferry <a href="">@deniseordway</a></p>
+            </div>
+            <div class="col-3" style="background-color: #F1F2F2;">
+                <!-- <div id="primiry"></div> -->
+                <!-- <p style="color: black; position: absolute; margin-top: 1%; text-decoration: solid;">Editors Picks </p> -->
+                <br>
+                <img class="oneimage" src="image/one.png" alt=""><br><br>
+                <p>ECONOMICS, ENVIRONMENT, HEALTH</p>
+                <h4><a href="" style="color: black;">Here are the answers to 15 common questions about fluoride in
+                        drinking water</a></h4>
+                <span>December 17, 2024</span><br><br>
+                <p>We scoured decades of published academic research to address questions about water fluoridation,
+                    including what it is, who makes decisions about it, and how safe and effective it is.</p>
+
+
+            </div>
+
+            <div class="col-9">
+                <p> <b>senior editor, economics and legal systems.</b> He joined The Journalist’s Resource in 2019 after
+                    working as a reporter for Newsweek and The Daily.
+                    Beast, as a researcher and editor on three books related to the Great Recession, and as a federal
+                    government communications strategist. He was a John Jay College Juvenile Justice Journalism Fellow
+                    and his work has been awarded by Investigative Reporters and Editors. Merrefield earned a bachelor’s
+                    degree in industrial and labor relations from Cornell University and a master’s degree from the
+                    Craig Newmark Graduate School of Journalism. He grew up in the St. George neighborhood of Staten
+                    Island, New York. An interesting fact: Merrefield played trombone in the 1999 New York Yankees
+                    championship parade.</p>
+
+                <p><b>senior editor, health.</b> She joined The Journalist’s Resource in 2021 after working as a health
+                    reporter in local newspapers
+                    and national medical trade publications for nearly two decades. Before joining JR, she was a senior
+                    health reporter at the Orlando Sentinel, where she covered the Pulse nightclub mass shooting and was
+                    part of the team that was a 2016 Pulitzer Prize finalist for its coverage of the tragedy. In 2017,
+                    she co-started the Journalists Covering Trauma Facebook group as a gathering place for reporters and
+                    editors and an information resource about journalists’ mental health and responsible reporting of
+                    tragedies. She graduated from the University of Central Florida with a bachelor’s degree in
+                    molecular and microbiology and later earned a master’s degree in journalism at American University.
+                    An interesting fact: Miller enjoys working on intricate crochet projects in her spare time, a skill
+                    she learned from her grandmother. </p>
+
+
+                <p><b>Nancy Gibbs,</b>director of the Shorenstein Center and the Edward R. Murrow Professor of Practice
+                    of Press,
+                    Politics and Public Policy. Until September 2017, she was editor-in-chief of TIME, directing news
+                    and feature coverage across all platforms for more than 65 million readers worldwide, as well as
+                    editorial director of the Time Inc. News Group. Gibbs was named TIME’s 17th editor in September
+                    2013, the first woman to hold the position, and remains an editor at large.</p>
+
+                <p><b>Thomas E. Patterson,</b> Bradlee Professor of Government and the Press. He is the founder of The
+                    Journalist’s Resource and author of the 2013 book <i> <a href="">Informing the News: The Need for
+                            Knowledge-Based Journalism.</a> </i>His earlier book on the media’s political role, Out of
+                    Order,
+                    received the American Political Science Association’s Graber Award as the best book of the decade in
+                    political communication. His book The Vanishing Voter looked at the causes and consequences of
+                    electoral participation. </p>
+
+                <h1>Testimonials:</h1>
+                <p>We receive feedback nearly every day about The Journalist’s Resource; here are a few testimonials
+                    from people who have found value in our resources:</p>
+            </div>
+            <div class="col-3" style="background-color: #F1F2F2;">
+                <hr><br>
+                <img class="oneimage" src="image/two.png" alt=""><br><br>
+                <p>ECONOMICS, ENVIRONMENT, HEALTH, POLITICS, GOVERNMENT</p>
+                <h4><a href="" style="color: black;">Pharmacy benefit managers: What journalists need to know about the
+                        prescription drug middleman industry</a></h4>
+                <span>December 17, 2024</span><br><br>
+                <p>Read on to learn how pharmacy benefit managers influence drug prices in the U.S., and how academic
+                    studies can help you gain a deeper understanding of the concerns about PBMs. PLUS: 4 tips for
+                    localizing and covering stories about PBMs.</p>
+
+
+            </div>
+
+            <div class="col-9">
+                <p>
+                    “I just wanted to express my thanks for this consistently useful newsletter. I am a member of
+                    several professional organizations and The Journalist’s Resource has definitely risen to the top. I
+                    very much appreciate the work and thought done by the people of this organization. Though my beat is
+                    science and solutions, I find that I learn how to do my job better, each time I read one of your
+                    emails.” <b>— Jenny Morber, </b>freelance journalist.</p>
+                <p>“Journalists love data and research but are notoriously strapped for time. Our reporters in
+                    particular have taken on assignments for this project in addition to their existing, full workloads.
+                    Through their journalist research briefs, The Journalist’s Resource at the Shorenstein Center has
+                    been a critical resource to help fill in the gaps and strengthen the quality of the reporters’
+                    mental health coverage. Our partners have pitched an array of topics and somehow the center has been
+                    able to provide resources for nearly all of them, along with producing new briefs for our upcoming
+                    websites. We are greatly appreciative of all the help they’ve given the team.” <b>—Nora Fleming,</b>
+                    newsroom collaborative manager, Mental Health Parity Collaborative</p>
+
+
+
+                <p>“There is no site I’d rather discuss my research with than The Journalist’s Resource. The writers ask
+                    insightful questions, always with an eye towards a broader audience and translating research
+                    findings into tangible actions and solutions. Whenever JR writes about my research, I know that
+                    other media outlets and interested groups will soon be in touch. I also regularly assign their
+                    articles in my classes! I’m so glad that JR exists, and always look forward to speaking with them
+                    again.”<b>— Joshua Darr,</b> associate professor of political communication at Syracuse University
+                </p>
+
+
+                <p>“The DNBC is a necessary bridge between academic research and journalism.
+                    Journalists, especially those working in local news, are hungry for data on deadline and need
+                    information to contextualize what’s happening in their communities. News organizations are critical
+                    to helping bring the knowledge generated in academia to a broader audience. JR facilitates a
+                    critical partnership for healthier, more informed communities.”<b>— Leah Todd,</b> Local Media
+                    Project
+                    team and New England region manager, Solutions Journalism Network</p>
+
+                <p>“The tip sheets and other services The Journalist’s Resource provides have helped our reporters and
+                    editors tackle complex topics in which they may not previously have been immersed. And that’s a
+                    fundamental predicament for journalists who can wake up to a completely new and urgent subject every
+                    day. As the speed of the news cycle has accelerated, this has become a bigger problem for newsrooms.
+                </p>
+
+            </div>
+            <div class="col-3" style="background-color: #F1F2F2;">
+                <hr><br>
+                <img class="oneimage" src="image/three.png" alt=""><br><br>
+                <p>ECONOMICS,HEALTH.</p>
+                <h4><a href="" style="color: black;">How school nurses can <br> help fight chronic absenteeism</a></h4>
+                <span>December 17, 2024</span><br><br>
+                <p>In this research-based explainer, we examine the rise in chronic student absenteeism in recent years
+                    and the various ways school nurses, an underutilized resource in the push to improve attendance, can
+                    help.</p><br>
+
+
+            </div>
+            <div class="col-9">
+
+                <p> The DNBC has responded with prescient prep work on emerging.The Center for Public
+                    Integrity topics and timely
+                    response when news breaks. It’s like having a newsroom librarian, an ethicist, and a veteran
+                    journalist with encyclopedic expertise on a niche topic again, even though all of those things have
+                    long been missing from many depleted newsrooms. Most of all, Journalist’s Resource helps us build
+                    trust in our reporting by flagging common pitfalls in reporting on particular topics, helping us
+                    improve accuracy and bring context and nuance on deadline.”former editor-in-chief,</p>
+
+
+
+
+
+            </div>
+        
+
+
+
+
+        </div>
+    </div>
+
+    </div>
+    <div class="container-fluid p-0">
+        <footer class="footer pt-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Company Info -->
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="footer-title">About Company</h3>
+
+                        <p class="mb-4">Your go-to platform for accurate, timely, and engaging news, covering the
+                            stories
+                            that matter most to you. DNBC keeps you informed and connected to the world.</p>
+                        <div class="social-links mb-4">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-6">
+                        <h3 class="footer-title">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Today in World</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Support -->
+                    <div class="col-lg-2 col-md-6">
+                        <h3 class="footer-title">Contact</h3>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fa-solid fa-phone"></i> +012 345 67890</a></li>
+                            <li><a href="#"><i class="fa-regular fa-envelope"></i> info@example.com</a></li>
+                            <li><a href="#"><i class="fa-solid fa-location-dot"></i> info@example.com</a></li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="footer-title">Newsletter</h3>
+                        <p class="mb-4">Subscribe to our newsletter for updates, news, and exclusive offers.</p>
+                        <form class="mb-4">
+                            <div class="input-group">
+                                <input type="email" class="form-control newsletter-input"
+                                    placeholder="Enter your email">
+                                <button class="btn btn-subscribe text-white" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom mt-5">
+                <div class="container">
+                    <div class="row py-3">
+                        <div class="col-md-6 text-center text-md-start">
+                            <p class="last">&copy; All Rights Reserved. Designed by : <span>Hassan Misbah, Owais
+                                    Khan,
+                                    Arsalan Zaman, Kashan and Abu Darda</span></p>
+                        </div>
+                        <!-- <div class="col-md-6 text-center text-md-end">
+                            <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by <a
+                                    href="#">YourBrand</a></p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+    <!-- jquery -->
+    <script src="jquery.js "></script>
+    <script>
+        $(document).ready(function () {
+            $('#btn').mouseenter(function () {
+                $('#btn').css('background-color', '#AA1F24')
+                $('#btn').css('color', 'white')
+                $('#btn').mouseleave(function () {
+                    $('#btn').css('background-color', 'white')
+                    $('#btn').css('color', 'black')
+                })
+            })
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#btn1').mouseenter(function () {
+                $('#btn1').css('background-color', '#AA1F24')
+                $('#btn1').css('color', 'white')
+                $('#btn1').mouseleave(function () {
+                    $('#btn1').css('background-color', 'white')
+                    $('#btn1').css('color', 'black')
+                })
+            })
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#btn2').mouseenter(function () {
+                $('#btn2').css('background-color', 'white')
+                $('#btn2').css('color', '#AA1F24')
+                $('#btn2').mouseleave(function () {
+                    $('#btn2').css('background-color', '#AA1F24')
+                    $('#btn2').css('color', 'white')
+                })
+            })
+        })
+    </script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

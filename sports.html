@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+    <link rel="stylesheet" href="sports.css">
+    <link rel="stylesheet" href="navbar.css">
+    <!--bootsrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .hov1 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .hov1 a:hover {
+            color: rgb(178, 36, 36);
+            text-decoration: underline;
+        }
+
+        .hov2 a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .hov2 a:hover {
+            color: rgb(178, 36, 36);
+            text-decoration: underline;
+        }
+        .heiaI{
+            font-size: 40px;
+            color: rgb(178, 36, 36);
+            text-transform: uppercase;
+            font-weight: 600;
+            font-family: "Lora", serif;
+        }
+
+        .footer {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        span {
+
+            font-size: 19px;
+            font-weight: 600;
+        }
+
+        .footer-title {
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        .last{
+            font-size: 19px;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 30px;
+            height: 2px;
+            background: #c94242;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: #b4b6bb;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+            padding-left: 5px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #c94242;
+            transform: translateY(-3px);
+        }
+
+        .input-group input::placeholder {
+            color: white;
+        }
+
+        .newsletter-input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+        }
+
+        .newsletter-input:focus {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: #6c5ce7;
+            color: #ffffff;
+            box-shadow: none;
+        }
+
+        .btn-subscribe {
+            background: #c94242;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-subscribe:hover {
+            background: #5a4bd1;
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            background: #c94242;
+        }
+
+        .footer-bottom a {
+            color: #6c5ce7;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="logo text-center">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(46, 43, 43);">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sports.html">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="business.html">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="world.html">Today in World</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Countries News
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="china.html">China</a>
+                           
+                            <a class="dropdown-item" href="london.html">London</a>
+                            <a class="dropdown-item" href="singgapore.html">Singapore</a>
+                            <a class="dropdown-item" href="newyork.html">NewYork</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <br>
+
+    <h2 class="heiaI">Sports</h2>
+
+    <br>
+    <!-- first container -->
+    <div class="container hov1">
+        <div class="row">
+
+            <div class="col-12 col-md-6" data-aos="fade-right" data-aos-duration="2000">
+                <a href="sportsub.html"><img src="sportsimages/sp1.jpg" class="img-fluid" alt=""></a>
+                <a href="sportsub.html">
+                    <h3>The Olympic-Size Difference Between India and China</h3>
+                </a>
+                <p>
+                    The recent Tokyo Olympic Games provided further evidence of why “Chindia,” a term popular a decade
+                    or so ago, is little heard nowadays.
+                    Whereas China’s disciplined government-led preparation delivered a huge medal haul, India’s
+                    shambolic organization led to the country
+                    being ranked behind the Bahamas and Kosovo.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-6" data-aos="fade-down" data-aos-duration="2000">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-4">
+                        <a href="sportssub2.html"><img src="sportsimages/sp2.jpg" class="img-fluid" alt=""></a>
+                        <a href="sportssub2.html">
+                            <h3>Why Governments Should Invest in Sports</h3>
+                        </a>
+                        <p>Latin American and Caribbean countries spend about one-third as much as their European
+                            counterparts on sports</p>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-4">
+                        <a href="sportssub3.html"><img src="sportsimages/sp4.jpg" class="img-fluid" alt=""></a>
+                        <a href="sportssub3.html">
+                            <h3>The End of Amateur Hour for the NCAA</h3>
+                        </a>
+                        <p>The NCAA is asking the US Supreme Court to endorse the fiction that it is preserving
+                            amateurism in athletics.</p>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-4">
+                        <a href="sportssub4.html"><img src="sportsimages/sp3.jpg" class="img-fluid" alt=""></a>
+                        <a href="sportssub4.html">
+                            <h3>FIFA’s World Cup Follies</h3>
+                        </a>
+                        <p>Dives into the thicker of fatuousness, hypocrisy, and greed that the tournament has become.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-4">
+                        <a href="sportssub5.html"><img src="sportsimages/sp5.jpg" class="img-fluid" alt=""></a>
+                        <a href="sportssub5.html">
+                            <h3>Can the Olympics Prevent War?</h3>
+                        </a>
+                        <p>Why abandoning the myth of an apolitical Games could help to promote peace.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- second container -->
+
+    <div class="container hov1" data-aos="fade-up" data-aos-duration="2000">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <a href="sportsub6.html"><img src="sportsimages/sp6.jpg" class="img-fluid" alt=""></a>
+                <a href="sportsub6.html">
+                    <h3>The Cricket Factor in Indian Politics</h3>
+                </a>
+                <p>In India, cricket is much more than a sport; it is also a political tool, a lucrative industry, a
+                    source of prestige.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <a href="sportssub7.html"><img src="sportsimages/sp7.jpg" class="img-fluid" alt=""></a>
+                <a href="sportssub7.html">
+                    <h3>The Idiocy of Olympic Values</h3>
+                </a>
+                <p>It should surprise no one that the preparations for the Winter Olympics in Sochi, Russia, turned out
+                    to be wildly expensive and riddled with corruption.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <a href="sporsub8.html"><img src="sportsimages/sp8.jpe" class="img-fluid" alt=""></a>
+                <a href="sporsub8.html">
+                    <h3>The World Cup and African Women</h3>
+                </a>
+                <p>Given male dominance in African politics and soccer, any chance to improve the state of the sport
+                    that might arise from the 2010 World Cup.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <a href="sportsub9.html"><img src="sportsimages/sp9.jpg" class="img-fluid" alt=""></a>
+                <a href="sportsub9.html">
+                    <h3>A Winning World Cup Strategy for the Arab World</h3>
+                </a>
+                <p>Morocco’s success in the tournament has united Arabs throughout the Middle East and North Africa
+                    behind a common hope.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--third container-->
+
+    <div class="container hov1">
+        <div class="row align-items-center">
+
+            <div class="col-12 col-md-6" data-aos="fade-right" data-aos-duration="2000">
+                <a href="sportssub10.html">
+                    <h3>Shan Masood, Babar Azam set world record with 205-run opening stand</h3>
+                </a>
+                <p>
+                    This partnership, which eclipsed previous records, provided Pakistan a much-needed fightback after
+                    being bowled out for just 194 in their first innings.
+                    Their 205-run stand not only defied the pressure of the follow-on but also gave the visiting side a
+                    glimmer of hope to level the series.
+                </p>
+                <br>
+                <p>
+                    Shan’s remarkable century, his sixth in Test cricket, and Babar’s 81 runs, which included 10
+                    boundaries, were instrumental in keeping South Africa on the back foot.
+                    The pair's display of determination and composure on a pitch now easing for batting left the hosts
+                    helpless.
+                </p>
+                <br>
+                <p>
+                    Babar, who was well on his way to scoring a long-awaited Test hundred, was dismissed at gully, but
+                    not before creating history.
+                    His partnership with Shan marked the highest-ever opening stand in a follow-on innings in Test
+                    cricket, setting a new world record.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-6" data-aos="fade-left" data-aos-duration="2000">
+                <a href="sportssub10.html"><img src="sportsimages/sp10.png" class="img-fluid" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <!-- fourth section -->
+
+    <div class="container hov1">
+        <div class="row">
+            <div class="col-12 col-md-3 mb-4" data-aos="fade-right" data-aos-duration="2000">
+                <a href="sportssub11.html"><img src="sportsimages/sp12.png" class="img-fluid" alt=""></a>
+                <a href="sportssub11.html">
+                    <h3>Liverpool deny Man United victory.</h3>
+                </a>
+                <p>
+                    The result leaves Liverpool six points clear at the top of the table with a game left, ahead of
+                    second-placed Arsenal.
+                </p>
+            </div>
+            <div class="col-12 col-md-3 mb-4" data-aos="fade-right" data-aos-duration="2000">
+                <a href="sportssub12.html"><img src="sportsimages/sp14.png" class="img-fluid" alt=""></a>
+                <a href="sportssub12.html">
+                    <h3>PCB to send injured Saim Ayub to London for treatment</h3>
+                </a>
+                <p>Assistant coach Azhar Mahmood will also accompany him to London.</p>
+            </div>
+            <div class="col-12 col-md-6 mb-4" data-aos="fade-left" data-aos-duration="2000">
+                <a href="sportssub13.html"><img src="sportsimages/sp13.jpeg" class="img-fluid" alt=""></a>
+                <a href="sportssub13.html">
+                    <h3>Oman to host inaugural FIH Hockey Nations Cup 2</h3>
+                </a>
+                <p>The tournament will offer new teams a chance at international glory.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- fifth section -->
+
+    <div class="container-fluid fifth-section">
+        <br><br>
+        <div class="container hov2" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                    <a href="sportssub14.html"><img src="sportsimages/sp15.jpg" class="img-fluid" alt=""></a>
+                    <a href="sportssub14.html">
+                        <h3>Gauff, Swiatek on collision course for United Cup glory</h3>
+                    </a>
+                    <p>
+                        Swiatek beat Elena Rybakina to help last year's runners-up Poland see off Kazakhstan and they
+                        were
+                        joined in Sunday's final of the mixed-teams tournament by the Gauff-led United States.
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <a href="sportssub15.html"><img src="sportsimages/sp18.jpg" class="img-fluid" alt=""></a>
+                    <a href="sportssub15.html">
+                        <h3>Sabalenka returns to Brisbane final</h3>
+                    </a>
+                    <p>
+                        World number one Sabalenka saved five breakpoints to edge a tight opening set against her
+                        17-year-old Russian opponent.
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <a href="sportssub.16.html"><img src="sportsimages/sp17.jpg" class="img-fluid" alt=""></a>
+                    <a href="sportssub.16.html">
+                        <h3>Arteta aghast at Brighton penalty</h3>
+                    </a>
+                    <p>
+                        Runaway leaders Liverpool hold a five-point advantage over second-placed Arsenal and have two
+                        games in hand to come.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<br><br>
+
+
+
+
+<footer class="footer pt-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Company Info -->
+            <div class="col-lg-4 col-md-6">
+                <h3 class="footer-title">About Company</h3>
+
+                <p class="mb-4">Your go-to platform for accurate, timely, and engaging news, covering the stories
+                    that matter most to you. DNBC keeps you informed and connected to the world.</p>
+                <div class="social-links mb-4">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="business.html">Business</a></li>
+                    <li><a href="world.html">Today in World</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Support -->
+            <div class="col-lg-2 col-md-6">
+                <h3 class="footer-title">Contact</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fa-solid fa-phone"></i> +012 345 67890</a></li>
+                    <li><a href="#"><i class="fa-regular fa-envelope"></i> info@example.com</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i> Aptech learning,North Karachi,Karachi</a></li>
+                  
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="col-lg-4 col-md-6">
+                <h3 class="footer-title">Newsletter</h3>
+                <p class="mb-4">Subscribe to our newsletter for updates, news, and exclusive offers.</p>
+                <form class="mb-4">
+                    <div class="input-group">
+                        <input type="email" class="form-control newsletter-input" placeholder="Enter your email">
+                        <button class="btn btn-subscribe text-white" type="submit">Subscribe</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom mt-5">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="last">&copy; All Rights Reserved. Designed by : <span>Hassan Misbah, Owais Khan,
+                            Arsalan Zaman, Kashan and Abu Darda</span></p>
+                </div>
+                <!-- <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by <a
+                            href="#">YourBrand</a></p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    <!--js link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="sports.js"></script>
+</body>
+
+</html>

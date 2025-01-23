@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewYork</title>
+    <link rel="stylesheet" href="newyork.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        .footer {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        span {
+
+            font-size: 19px;
+            font-weight: 600;
+        }
+
+        .footer-title {
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .last {
+            font-size: 19px;
+            color: White;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 30px;
+            height: 2px;
+            background: #c94242;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: #b4b6bb;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+            padding-left: 5px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #c94242;
+            transform: translateY(-3px);
+        }
+
+        .input-group input::placeholder {
+            color: white;
+        }
+
+        .newsletter-input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+        }
+
+        .newsletter-input:focus {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: #6c5ce7;
+            color: #ffffff;
+            box-shadow: none;
+        }
+
+        .btn-subscribe {
+            background: #c94242;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-subscribe:hover {
+            background: #5a4bd1;
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            background: #c94242;
+        }
+
+        .footer-bottom a {
+            color: #6c5ce7;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: #ffffff;
+        }
+
+        .seco2 {
+            color: #b4b6bb;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <div class="logo text-center">
+            <img src="newyorkimages/logo.png" alt="Logo">
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(46, 43, 43);">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sports.html">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="business.html">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="world.html">Today in World</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Countries News
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="newyork.html">New York</a>
+                            <a class="dropdown-item" href="singgapore.html">Singapore</a>
+                            <a class="dropdown-item" href="china.html">China</a>
+
+                            <a class="dropdown-item" href="london.html">London</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <img src="newyorkimages/NEW YORK.jpg" class="img-fluid" alt="" data-aos="fade-in" data-aos-duration="2000">
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container anker2">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                <a href="nysub1.html"><img src="newyorkimages/ny1.jpg" class="img-fluid"
+                        alt="Revered Bronx Catholic School" data-aos="fade-right" data-aos-duration="2000"> </a>
+            </div>
+            <div class="col-12 col-md-6" data-aos="fade-left" data-aos-duration="2000">
+                <a href="nysub1.html">
+                    <h3 class="toph1">
+                        Revered Bronx Catholic school in danger of closing
+                    </h3>
+                </a>
+                <p>All Hallows High School and its legacy that started in the early 20th century could come to an end if
+                    the Catholic school in the Bronx can't come up with $2.5 million.</p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="container anker2" data-aos="fade-up" data-aos-duration="2000">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <a href="nysub2.html"><img src="newyorkimages/ny2.webp" class="img-fluid" alt="" ></a>
+                <a href="nysub2.html">
+                    <h4>PATH fares increase for 1st time since 2014</h4>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <a href="nysub3.html"><img src="newyorkimages/ny3.jpg" class="img-fluid" alt=""></a>
+                <a href="nysub3.html">
+                    <h4>Donations pour in for California fire victims as NYC bar</h4>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <a href="nysub4.html"><img src="newyorkimages/ny4.webp" class="img-fluid" alt=""></a>
+                <a href="nysub4.html">
+                    <h4>NYC closes migrant shelter at Floyd Bennett Field</h4>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <a href="nysub5.html"><img src="newyorkimages/ny5.webp" class="img-fluid" alt=""></a>
+                <a href="nysub5.html">
+                    <h4>NYPD officers shoot armed suspect in Brooklyn, police say</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <div class="container anker2">
+        <div class="row">
+            <div class="col-12 col-md-3 mb-4" data-aos="fade-right" data-aos-duration="2000">
+                <a href="nysub6.html"><img src="newyorkimages/ny6.webp" class="img-fluid" alt=""></a>
+                <a href="nysub6.html">
+                    <h4>Senior citizens in Brighton Beach are fed up with parking problems</h4>
+                </a>
+            </div>
+            <div class="col-12 col-md-3 mb-4" data-aos="fade-right" data-aos-duration="2000">
+                <a href="nysub7.html"><img src="newyorkimages/ny7.jpg" class="img-fluid" alt=""></a>
+                <a href="nysub7.html">
+                    <h4>10 Macy's locations set to close across New York, New Jersey.</h4>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 mb-4" data-aos="fade-left" data-aos-duration="2000">
+                <a href="nysub8.html"><img src="newyorkimages/ny8.webp" class="img-fluid" alt=""></a>
+                <a href="nysub8.html">
+                    <h4>Congestion pricing's first work week winds down in NYC</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container-fluid t3"><br>
+        <div class="container">
+
+            <div class="row align-items-center mb-4" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <a href="nysub9.html"><img src="newyorkimages/ny9.webp" class="img-fluid" alt=""></a>
+                </div>
+                <div class="col-12 col-md-8" >
+                    <a href="nysub9.html">
+                        <h4>New York Gov. Kathy Hochul proposes universal free school meals</h4>
+                    </a>
+                    <p>- New York could become the next state to offer universal free school meals under a plan proposed
+                        by Gov. Kathy Hochul.</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row align-items-center mb-4" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <a href="nysub10.html"><img src="newyorkimages/ny10.webp" class="img-fluid" alt=""></a>
+                </div>
+                <div class="col-12 col-md-8">
+                    <a href="nysub10.html">
+                        <h4>Grand jury in NYC Mayor Eric Adams investigation has heard from more witnesses</h4>
+                    </a>
+                    <p>- A grand jury looking into corruption charges against New York City Mayor Eric Adams has heard
+                        from more witnesses, court papers reveal.</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row align-items-center" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <a href="nysub11.html"><img src="newyorkimages/ny11.webp" class="img-fluid" alt=""></a>
+                </div>
+                <div class="col-12 col-md-8">
+                    <a href="nysub11.html">
+                        <h4>Bronx apartment fire leaves 7 hurt, more than 250 displaced</h4>
+                    </a>
+                    <p>- A five-alarm fire broke out early Friday morning in the Bronx, leaving seven people hurt and
+                        more than 250 needing shelter and emergency assistance.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br>
+
+
+    <div class="container anker2" data-aos="fade-up" data-aos-duration="2000">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <a href="nysub12.html"><img src="newyorkimages/ny12.webp" class="img-fluid" alt=""></a>
+                <a href="nysub12.html">
+                    <h4>What happened at Trump's "hush money" sentencing?</h4>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <a href="nysub6.html"><img src="newyorkimages/ny13.jpg" class="img-fluid" alt=""></a>
+                <a href="nysub6.html">
+                    <h4>Caleb Rijos, 14, stabbed to death in Bronx</h4>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <a href="nysub5.html"><img src="newyorkimages/ny14.webp" class="img-fluid" alt=""></a>
+                <a href="nysub5.html">
+                    <h4>MLB bans Yankees fans who interfered with Mookie</h4>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <a href="nysub9.html"><img src="newyorkimages/ny15.webp" class="img-fluid" alt=""></a>
+                <a href="nysub9.html">
+                    <h4>Bronx boy murdered by "career criminal" with 4 prior arrests</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+
+
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-title">About Company</h3>
+
+                    <p class="seco2">Your go-to platform for accurate, timely, and engaging news, covering the stories
+                        that matter most to you. DNBC keeps you informed and connected to the world.</p>
+                    <div class="social-links mb-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sports.html">Sports</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li><a href="world.html">Today in World</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="col-lg-2 col-md-6">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fa-solid fa-phone"></i> +012 345 67890</a></li>
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i> info@example.com</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Aptech learning,North Karachi,Karachi</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="seco2">Subscribe to our newsletter for updates, news, and exclusive offers.</p>
+                    <form class="mb-4">
+                        <div class="input-group">
+                            <input type="email" class="form-control newsletter-input" placeholder="Enter your email">
+                            <button class="btn btn-subscribe text-white" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom mt-5">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="last">&copy; All Rights Reserved. Designed by : <span>Hassan Misbah, Owais Khan,
+                                Arsalan Zaman, Kashan and Abu Darda</span></p>
+                    </div>
+                    <!-- <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by <a
+                            href="#">YourBrand</a></p>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        JS
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

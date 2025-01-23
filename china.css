@@ -1,0 +1,46 @@
+.sec-2{
+    background-color: rgb(56, 52, 52);
+    color: white;
+}
+.sec-2 a:hover{
+  color: #c94242;
+  text-decoration: underline;
+}
+
+h3 {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 8px;
+    padding-top: 10px;
+  }
+
+  p{
+    font-family: "Lora", serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .firsttext h3{
+    padding-top: 97px;
+  }
+  .sec-2 h3{
+    padding-top: 70px;
+  }
+  img{
+    border-radius: 6px;
+  }
+  .head5{
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 25px;
+    padding-top: 10px; 
+  }
+.anker a:hover{
+  
+    color: #c94242;
+    text-decoration: underline;
+
+}
+
+
+  

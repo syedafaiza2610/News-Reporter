@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today In World Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="navbar.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .i1 {
+            width: 50vw;
+        }
+
+        img {
+            border-radius: 6px;
+        }
+
+        .a1 a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .a1 a:hover {
+            color: #c94242;
+            text-decoration: underline;
+        }
+
+        .sdjdda {
+            font-size: 40px;
+            color: rgb(178, 36, 36);
+            text-transform: uppercase;
+            font-weight: 600;
+            font-family: "Lora", serif;
+            text-align: center;
+            padding-bottom: 20px;
+
+        }
+
+
+        h4 {
+            font-family: "Lora", serif;
+            font-weight: 600;
+
+            padding-top: 10px;
+        }
+
+        p {
+            font-family: "Lora", serif;
+            font-weight: 300;
+            font-size: 18px;
+            padding-top: 10px;
+        }
+
+        span {
+            font-family: "Lora", serif;
+            font-weight: 300;
+            font-size: 18px;
+            padding-top: 10px;
+        }
+
+        .footer {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        span {
+
+            font-size: 19px;
+            font-weight: 600;
+        }
+
+        .footer-title {
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .last {
+            font-size: 19px;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 30px;
+            height: 2px;
+            background: #c94242;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: #b4b6bb;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+            padding-left: 5px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #c94242;
+            transform: translateY(-3px);
+        }
+
+        .input-group input::placeholder {
+            color: white;
+        }
+
+        .newsletter-input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+        }
+
+        .newsletter-input:focus {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: #6c5ce7;
+            color: #ffffff;
+            box-shadow: none;
+        }
+
+        .btn-subscribe {
+            background: #c94242;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-subscribe:hover {
+            background: #5a4bd1;
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            background: #c94242;
+        }
+
+        .footer-bottom a {
+            color: #6c5ce7;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="logo text-center">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(46, 43, 43);">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sports.html">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="business.html">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="world.html">Today in World</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Countries News
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="china.html">China</a>
+
+                            <a class="dropdown-item" href="london.html">London</a>
+                            <a class="dropdown-item" href="singgapore.html">Singapore</a>
+                            <a class="dropdown-item" href="newyork.html">NewYork</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <h2 class="sdjdda">Today in world</h2>
+
+
+    <div class="container a1 ">
+        <div class="row align-items-center gy-4">
+            <div class="col-12 col-sm-5">
+                <a href="worldsub1.html"> <img src="f6a9fff0-d4da-11ef-9aad-49f5f16e12eb.jpg.webp" alt=""
+                        class="img-fluid" data-aos="fade-right" data-aos-duration="2000"></a>
+            </div>
+            <div class="col-12 col-sm-7" data-aos="fade-left" data-aos-duration="2000">
+                <a href="worldsub1.html">
+                    <h4 class="mt-4 mt-sm-5">'I wasn't sporty but I've won a 268-mile race'</h4>
+                </a>
+
+                <p class="mt-3">SBut that has all changed for 14-time Ironman champion Lucy Gossage, whose<br> latest feat
+                    saw her win a gruelling ultramarathon between Derbyshire and Scotland.</p>
+                <span class="d-block mt-2">News Desk | Updated 3 minutes ago |</span>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container a1" data-aos="fade-up" data-aos-duration="2000">
+        <div class="row gy-4">
+            <div class="col-12 col-sm-6 col-lg-4"></a>
+                <a href="worldsub2.html"> <img src="Images/image 29.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub2.html">
+                    <h4 class="mt-2">'You're a racist if you define sex offenders by ethnicity'</h4>
+                </a>
+
+                <p class="mt-2">Mehdi Hasan roasts Piers Morgan as he dismantles Elon Musk’s narrative on UK's grooming
+                    gang crimes.</p>
+                <span>News Desk | Updated 4 hours ago |</span>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a href="worldsub3.html"> <img src="Images/image 30.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub3.html">
+                    <h4 class="mt-2">LA wildfire destroys US Olympian Gary Hall Jr's home, Olympic medals</h4>
+                </a>
+
+                <p class="mt-2">The swimmer described seeing the wildfire quickly approach his home, leaving him with
+                    just minutes to escape.</p>
+                <span>News Desk | Updated 54 minutes ago |</span>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a href="worldsub4.html"> <img src="Images/image 31.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub4.html">
+                    <h4 class="mt-2">Is it Really the End of TikTok in the US? App's Fate Hangs in the Balance</h4>
+                </a>
+
+                <p class="mt-2">TikTok confirms it will shut down unless the Supreme Court strikes down or postpones law
+                    requiring it to be sold.</p>
+                <span>Magazine Desk | Updated 8 hours ago |</span>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+    <br>
+
+
+    <div class="container a1 ">
+        <div class="row gy-4 align-items-start">
+            <!-- First Column -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a href="worldsub5.html"> <img src="Images/image 32.webp" alt="" class="img-fluid" data-aos="fade-right"
+                        data-aos-duration="2000"></a>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-right" data-aos-duration="2000">
+                <a href="worldsub5.html">
+                    <h4 class="">Elon Musk faces allegations over in-game achievements in Diablo IV and Path of Exile 2
+                    </h4>
+                </a>
+
+                <p class="mt-3">Elon Musk’s rise in Diablo IV and Path of Exile 2 scrutinised with allegations of
+                    account
+                    sharing and other loopholes.</p>
+                <span> News Desk | Updated 2 hours ago |</span>
+            </div>
+
+            <!-- Third Column -->
+            <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-left" data-aos-duration="2000">
+                <a href="worldsub6.html"> <img src="Images/image 33.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub6.html">
+                    <h4 class="mt-2">OnePlus 13 and OnePlus 13R released in US</h4>
+                </a>
+
+                <p class="mt-2">OnePlus 13 is available for purchase starting January 7, while the OnePlus 13R will be
+                    available from January 14.</p>
+                <span> News Desk | Updated Jan 08, 2025 |</span>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <br>
+
+    <div class="container a1">
+        <div class="row gy-4">
+            <!-- First Column -->
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-right" data-aos-duration="2000">
+                <a href="worldsub6.html"> <img src="Images/image 34.webp" alt="" class="img-fluid"></a>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-right" data-aos-duration="2000">
+                <a href="worldsub6.html">
+                    <h4>WhatsApp rolls out fun filters</h4>
+                </a>
+
+                <p class="mt-2">These new features are expected to be available to all WhatsApp users in the coming
+                    weeks.</p>
+
+            </div>
+
+            <!-- Third Column -->
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-left" data-aos-duration="2000">
+                <a href="worldsub7.html"> <img style="width: 100%;" src="Images/image 36.webp" alt=""
+                        class="img-fluid"></a>
+            </div>
+
+            <!-- Fourth Column -->
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-left" data-aos-duration="2000">
+                <a href="worldsub7.html">
+                    <h4>Forex reserves dip by $15m; gold shines</h4>
+                </a>
+
+                <p class="mt-2">Total FX drops to $16.38b; gold hits record highs as markets await key US data, rupee
+                    gains 11 paisa</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+    <br>
+    <div class="container a1 ">
+        <div class="row gy-4">
+            <!-- First Column -->
+            <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-right" data-aos-duration="2000">
+                <a href="worldsub8.html"> <img src="Images/image 37.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub8.html">
+                    <h4 class="mt-2">'You're a racist if you define sex offenders by ethnicity'</h4>
+                </a>
+
+                <p class="mt-2">Mehdi Hasan roasts Piers Morgan as he dismantles Elon Musk’s narrative on UK's
+                    grooming gang crimes.</p>
+                <span> News Desk | Updated 4 hours ago |</span>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-12 col-sm-6 col-lg-2" data-aos="fade-up" data-aos-duration="2000">
+                <a href="worldsub9.html"><img src="Images/image 38.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub9.html">
+                    <h4 class="mt-2">photo reuters Trump and Obama’s rare </h4>
+                </a>
+                <span> Updated 6 hours ago</span>
+            </div>
+
+            <!-- Third Column -->
+            <div class="col-12 col-sm-6 col-lg-2" data-aos="fade-up" data-aos-duration="2000">
+                <a href="worldsub10.html"> <img src="Images/image 39.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub10.html">
+                    <h4 class="mt-2">Pakistan voices concern over North Korea's </h4>
+                </a>
+                <span>Updated Jan 09, 2025</span>
+            </div>
+
+            <!-- Fourth Column -->
+            <div class="col-12 col-sm-6 col-lg-2" data-aos="fade-up" data-aos-duration="2000">
+                <a href="worldsub11.html"><img src="Images/image 40.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub11.html">
+                    <h4 class="mt-2">Moon to swallow Mars in rare lunar occultation</h4>
+                </a>
+                <span>Updated 6 hours ago</span>
+            </div>
+
+            <!-- Fifth Column -->
+            <div class="col-12 col-sm-6 col-lg-2" data-aos="fade-up" data-aos-duration="2000">
+                <a href="worldsub12.html"><img src="Images/image 41.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub12.html">
+                    <h4 class="mt-2">Florida sues Healthcare company</h4>
+                </a>
+                <span>Updated 2 hours ago</span>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+    <div class="container a1" data-aos="fade-up" data-aos-duration="2000">
+        <div class="row gy-4">
+            <!-- First Column -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a href="worldsub13.html"> <img src="Images/image 47.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub13.html">
+                    <h4 class="mt-2">The woman who built an 'aidbot' for displaced people in Lebanon</h4>
+                </a>
+                <p>Meet the woman who has found an innovative way to simply access much-needed aid in war-torn Lebanon.
+                </p>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a href="worldsub14.html"> <img src="Images/image 48.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub14.html">
+                    <h4 class="mt-2">US top court leans towards TikTok ban over security concerns</h4>
+                </a>
+                <p>The Supreme Court appears poised to uphold a law that bans TikTok in the US over national security
+                    concerns unless its China-based
+                </p>
+            </div>
+
+            <!-- Third Column -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a href="worldsub15.html"><img src="Images/image 49.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub15.html">
+                    <h4 class="mt-2">How AI uncovers new ways to tackle difficult diseases</h4>
+                </a>
+                <p>This is the fourth feature in a six-part series that is looking at how AI is changing medical
+                    research and treatments.</p>
+            </div>
+
+            <!-- Fourth Column -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a href="worldsub16.html"><img src="Images/image 50.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub16.html">
+                    <h4 class="mt-2">Tech Decoded Newsletter</h4>
+                </a>
+                <p>Decode the biggest developments in global technology, with analysis from BBC correspondents around
+                    the world in our twice-weekly email newsletter arriving Monday and Friday.</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+    <div class="container a1" data-aos="fade-down" data-aos-duration="2000">
+        <div class="row gy-4">
+            <!-- First Column -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a href="worldsub17.html"><img src="Images/image 52.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub17.html">
+                    <h4 class="mt-2">Decode the biggest developments</h4>
+                </a>
+                <p>in global technology, with analysis from BBC
+                    correspondents around the world in our twice-weekly email newsletter arriving Monday and Friday.
+                </p>
+
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a href="worldsub18.html"><img src="Images/image 53.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub18.html">
+                    <h4 class="mt-2">What can we learn about sleep from the land</h4>
+                </a>
+                <p>The 24-hour darkness during the winter near the Poles can disrupt sleep – this is how the people
+                    who live there cope.</p>
+            </div>
+
+            <!-- Third Column -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a href="worldsub19.html"><img src="Images/image 54.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub19.html">
+                    <h4 class="mt-2">A four-day science-backed guide to forging better
+                    </h4>
+                </a>
+                <p>Friendships can bring some surprising benefits to our health. Here's how you can make new friends
+                    and strengthen the ones you've got already.</p>
+            </div>
+
+            <!-- Fourth Column -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a href="worldsub20.html"><img src="Images/image 55.webp" alt="" class="img-fluid"></a>
+                <a href="worldsub20.html">
+                    <h4 class="mt-2">Why just two hours of exercise a week</h4>
+                </a>
+                <p>Many people struggle to do the recommended amount of exercise each week. But research suggests
+                    even a small amount has powerful effects.</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-title">About Company</h3>
+
+                    <p class="mb-4">Your go-to platform for accurate, timely, and engaging news, covering the stories
+                        that matter most to you. DNBC keeps you informed and connected to the world.</p>
+                    <div class="social-links mb-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sports.html">Sports</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li><a href="world.html">Today in World</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="col-lg-2 col-md-6">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fa-solid fa-phone"></i> +012 345 67890</a></li>
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i> info@example.com</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Aptech learning,North
+                                Karachi,Karachi</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="mb-4">Subscribe to our newsletter for updates, news, and exclusive offers.</p>
+                    <form class="mb-4">
+                        <div class="input-group">
+                            <input type="email" class="form-control newsletter-input" placeholder="Enter your email">
+                            <button class="btn btn-subscribe text-white" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom mt-5">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="last">&copy; All Rights Reserved. Designed by : <span>Hassan Misbah, Owais Khan,
+                                Arsalan Zaman, Kashan and Abu Darda</span></p>
+                    </div>
+                    <!-- <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by <a
+                                href="#">YourBrand</a></p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

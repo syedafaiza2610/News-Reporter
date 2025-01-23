@@ -1,0 +1,29 @@
+.weather-sec{
+    border-right: 1px solid black;
+    height: 100px;
+}
+.image-1{
+    width: 60px;
+
+}
+.sec-3{
+background-color: rgb(80, 80, 80);
+}
+.sec-3 h3:hover{
+    color: #c94242;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.headings{
+   
+    color: white;
+}
+
+.anker h3:hover{
+    color: #c94242;
+  text-decoration: underline;
+  cursor: pointer;
+}
+img{
+    border-radius: 6px;
+}

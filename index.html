@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Home Page</title>
+    <style>
+        .main {
+            background: #000;
+            color: white;
+        }
+
+        .a1 a:hover {
+            color: #c94242;
+            text-decoration: underline;
+        }
+
+        .a2 a:hover {
+            color: #c94242;
+            text-decoration: underline;
+        }
+
+        h4 {
+            font-family: "Lora", serif;
+            font-weight: 600;
+
+            padding-top: 10px;
+        }
+
+        p {
+            font-family: "Lora", serif;
+            font-weight: 300;
+            font-size: 18px;
+            padding-top: 10px;
+        }
+
+        span {
+            font-family: "Lora", serif;
+            font-weight: 300;
+            font-size: 18px;
+            padding-top: 10px;
+        }
+
+        .i2 {
+            margin-top: 170px;
+        }
+
+        .a1 a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .a2 a {
+            color: white;
+            text-decoration: none;
+        }
+
+        img {
+            border-radius: 7px;
+        }
+
+
+        .footer {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        span {
+
+            font-size: 19px;
+            font-weight: 600;
+        }
+
+        .footer-title {
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .last {
+            font-size: 19px;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 30px;
+            height: 2px;
+            background: #c94242;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: #b4b6bb;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+            padding-left: 5px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #c94242;
+            transform: translateY(-3px);
+        }
+
+        .input-group input::placeholder {
+            color: white;
+        }
+
+        .newsletter-input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+        }
+
+        .newsletter-input:focus {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: #6c5ce7;
+            color: #ffffff;
+            box-shadow: none;
+        }
+
+        .btn-subscribe {
+            background: #c94242;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-subscribe:hover {
+            background: #5a4bd1;
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            background: #c94242;
+        }
+
+        .footer-bottom a {
+            color: #6c5ce7;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="logo text-center">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(46, 43, 43);">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sports.html">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="business.html">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="world.html">Today in World</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Countries News
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="china.html">China</a>
+                            <a class="dropdown-item" href="london.html">London</a>
+                            <a class="dropdown-item" href="singgapore.html">Singapore</a>
+                            <a class="dropdown-item" href="newyork.html">NewYork</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- navbar end -->
+
+    <div class="container a1 ">
+        <div class="row gy-4">
+            <!-- First Column -->
+            <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-right" data-aos-duration="2000">
+                <a href="homesub1.html"><img src="20d25890-d490-11ef-89cc-ff703c31a434.jpg.webp" alt=""
+                        class="img-fluid mt-5"></a>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-left" data-aos-duration="2000">
+                <a href="homesub1.html">
+                    <h4 class="i2">Who is China sending to Trump's inauguration?</h4>
+                </a>
+                <span class="i2">China is sending Vice-President Han Zheng to US President-elect Donald Trump's
+                    inauguration on Monday - the first time a senior Chinese leader will witness a US president being
+                    sworn in.</span>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+
+    <div class="container a1" data-aos="fade-up" data-aos-duration="2000">
+        <div class="row">
+            <!-- First Column -->
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a href="homesub2.html"><img src="Images/image 2.webp" alt="" class="img-fluid"></a>
+                <a href="homesub2.html">
+                    <h4 class="mt-2">Imran Khan allows written submission</h4>
+                </a>
+                <span>Updated 1 hour ago</span>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a href="homesub3.html"> <img src="Images/image 3.webp" alt="" class="img-fluid"></a>
+                <a href="homesub3.html">
+                    <h4 class="mt-2">PTI to engage in third session of talks with govt</h4>
+                </a>
+                <span>Updated 4 hours ago</span>
+            </div>
+
+            <!-- Third Column -->
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a href="homesub4.html"><img src="Images/image 4.webp" alt="" class="img-fluid"></a>
+                <a href="homesub4.html">
+                    <h4 class="mt-2">FBR seeks proposals to phase out tax</h4>
+                </a>
+                <span>Updated 4 hours ago</span>
+            </div>
+
+            <!-- Fourth Column -->
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a href="homesub5.html"><img src="Images/image 5.webp" alt="" class="img-fluid"></a>
+                <a href="homesub5.html">
+                    <h4 class="mt-2">Jail officials of blocking access to Imran Khan</h4>
+                </a>
+                <span>Updated 4 hours ago</span>
+            </div>
+
+            <!-- Fifth Column -->
+            <div class="col-lg-4 col-md-8 col-sm-12 col-12">
+                <a href="homesub6.html"><img src="Images/image 10.webp" alt="" class="img-fluid"></a>
+                <a href="homesub6.html">
+                    <h4 class="mt-2">No relief for buyers as gold prices continue to soar in Pakistan</h4>
+                </a>
+
+                <p class="mt-2">The steady rise in gold prices comes amidst fluctuating economic conditions, influencing
+                    both global, local markets</p>
+                <span>News Desk | Updated 3 hours ago |</span>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="container a1" data-aos="fade-down" data-aos-duration="2000">
+        <div class="row">
+            <!-- First Column -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="homesub7.html"> <img src="Images/image 13.webp" alt="" class="img-fluid"></a>
+                <a href="homesub7.html">
+                    <h4 class="mt-2">Nida Yasir spills the beans on Neelam Muneer’s husband’s identity</h4>
+                </a>
+
+                <p class="mt-2">Neelam recently gained attention for her lavish wedding in Dubai, which was attended by
+                    close family members</p>
+                <span>News Desk | Updated 4 hours ago</span>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a href="homesub8.html"><img src="Images/image 6.webp" alt="" class="img-fluid"></a>
+                <a href="homesub8.html">
+                    <h4 class="mt-2">Expert urges breaks from screens</h4>
+                </a>
+                <span>Updated Dec 20, 2024</span>
+            </div>
+
+            <!-- Third Column -->
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a href="homesub8.html"><img src="Images/image 7.webp" alt="" class="img-fluid"></a>
+                <a href="homesub8.html">
+                    <h4 class="mt-2">ICT poised for digital over his<br>haul</h4>
+                </a>
+                <span>Updated Dec 20, 2024</span>
+            </div>
+
+            <!-- Fourth Column -->
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a href="homesub9.html"><img src="Images/image 11.webp" alt="" class="img-fluid"></a>
+                <a href="homesub9.html">
+                    <h4 class="mt-2">AMC dean claims CM misguided on vacant ATH </h4>
+                </a>
+                <span>Updated Dec 20, 2024</span>
+            </div>
+
+            <!-- Fifth Column -->
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a href="homesub10.html"><img src="Images/image 12.webp" alt="" class="img-fluid"></a>
+                <a href="homesub10.html">
+                    <h4 class="mt-4">Ring Road project hits key milestone</h4>
+                </a>
+                <span>Updated Dec 20, 2024</span>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+    <div class="container a1" data-aos="fade-right" data-aos-duration="2000">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <a href="homesub11.html"><img src="Images/image 14.webp" alt="" class="img-fluid"></a>
+                <a href="homesub11.html">
+                    <h4 class="mt-2">London's busiest shopping area evacuated amid bomb </h4>
+                </a>
+
+                <p class="mt-2">News Desk | Updated 1 hour ago | Vehicle deemed non-suspicious after Regent Street
+                    evacuation, explosions were precautionary: Met Police.</p>
+                <span>News Desk | Updated 1 hour ago </span>
+            </div>
+            <div class="col-12 col-md-4">
+                <a href="homesub12.html"><img src="Images/image 15.webp" alt="" class="img-fluid"></a>
+                <a href="homesub12.html">
+                    <h4 class="mt-2">Meta to test eBay listings on Facebook Marketplace</h4>
+                </a>
+
+                <p class="mt-2">Meta to test eBay listings on Facebook Marketplace in Germany, France, and the US,
+                    allowing direct transactions</p>
+                <span>REUTERS | Updated 2 hours ago </span>
+            </div>
+            <div class="col-12 col-md-4">
+                <a href="homesub13.html"><img src="Images/image 16.webp" alt="" class="img-fluid"></a>
+                <a href="homesub13.html">
+                    <h4 class="mt-2">Ben Affleck rushes to Jennifer Garner’s home amid Pacific</h4>
+                </a>
+
+                <p class="mt-2">Affleck evacuates his home and visits Garner during Pacific Palisades wildfires,
+                    impacting celebrity neighborhoods.</p>
+                <span>Pop Culture & Art | Updated 18 minutes ago</span>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="main">
+        <br>
+        <div class="container a2" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row">
+                <!-- First set of articles -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <a href="homesub14.html"><img src="Images/image 17.webp" alt="" class="img-fluid"></a>
+                    <a href="homesub14.html">
+                        <h4 class="mt-2">Imran Khan vows to take cases to international stage</h4>
+                    </a>
+
+                    <p class="mt-2">Aleema Khan explained that they were prevented from entering the jail and had to
+                        walk</p>
+                    <span>News Desk | Updated 3 hours ago |</span>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <a href="homesub15.html"><img src="Images/image 20.webp" alt="" class="img-fluid"></a>
+                    <a href="homesub15.html">
+                        <h4 class="mt-2">PIA resumes direct flights to Paris <br> after four-year suspension</h4>
+                    </a>
+
+                    <p class="mt-2">The flight carried 330 passengers and 14 <br> crew members</p>
+                    <span>News Desk | Updated 5 hours ago |</span>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <a href="homesub16.html"><img src="Images/image 19.webp" alt="" class="img-fluid"></a>
+                    <a href="homesub16.html">
+                        <h4 class="mt-2">WATCH: Woman steals gold necklace from jewellery shop</h4>
+                    </a>
+
+                    <p class="mt-2">Thief distracted the shopkeeper and executed the heist swiftly.</p>
+                    <span>News Desk | Updated 7 hours ago |</span>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="container a1 " data-aos="fade-up" data-aos-duration="2000">
+        <div class="row gy-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="homesub23.html"><img src="Images/image 42.webp" alt="" class="img-fluid"></a>
+                <a href="homesub23.html">
+                    <h4>Women's FA Cup: Watch as lowest-ranked side</h4>
+                </a>
+                <p> Watch live coverage of Fulham v London City Lionesses in the first of eight Women's FA Cup fourth
+                    round matches</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="homesub24.html"><img src="Images/image 43.webp" alt="" class="img-fluid"></a>
+                <a href="homesub24.html">
+                    <h4>Ravens and Texans progress in NFL play-offs</h4>
+                </a>
+                <p> The Baltimore Ravens and Houston Texans both win on Saturday to book their place in week two of
+                    the NFL play-offs.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="homesub25.html"> <img src="Images/image 44.webp" alt="" class="img-fluid"></a>
+                <a href="homesub25.html">
+                    <h4>Fewer rate cuts and higher loan costs</h4>
+                </a>
+                <p> Jobs growth in the US surged unexpectedly last month. That's good news for the world's largest
+                    economy but could be "punishing"</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="homesub26.html"> <img src="Images/image 45.webp" alt="" class="img-fluid"></a>
+                <a href="homesub26.html">
+                    <h4 class="mt-2">'Very unlikely' foreign actor linked to Havana</h4>
+                </a>
+                <p> However, a new report says two of seven US intelligence bodies believe foreign actors could be
+                    able to use radio frequency technology.</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="container a1" data-aos="fade-down" data-aos-duration="2000">
+        <div class="row">
+          
+          <div class="col-12 col-lg-6 mb-4">
+            <a href="homesub27.html">
+              <img src="4a6bd0f0-d1cf-11ef-9fd6-0be88a764111.png.webp" class="img-fluid" alt="">
+            </a>
+            <a href="homesub27.html">
+              <h4 class="mt-2">Here's what to know about Donald Trump's inauguration</h4>
+            </a>
+          </div>
+      
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <a href="homesub28.html">
+              <img src="Images/image 56.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="homesub28.html">
+              <h4 class="mt-2">The year they came for the internet</h4>
+            </a>
+            <p>
+              As we start the new year, the state must realise that the young people of Pakistan deserve better;
+              that it must listen and consider their needs.
+            </p>
+          </div>
+      
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <a href="homesub29.html">
+              <img src="Images/image 57.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="homesub29.html">
+              <h4 class="mt-2">Welcoming 2025 in Pakistan: The satire edition</h4>
+            </a>
+            <p>
+              From economy to politics and sports, here's our annual satirical forecast for all things Pakistan.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    <br><br>
+
+    <!-- footer -->
+
+
+
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-title">About Company</h3>
+
+                    <p class="mb-4">Your go-to platform for accurate, timely, and engaging news, covering the stories
+                        that matter most to you. DNBC keeps you informed and connected to the world.</p>
+                    <div class="social-links mb-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sports.html">Sports</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li><a href="world.html">Today in World</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="col-lg-2 col-md-6">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fa-solid fa-phone"></i> +012 345 67890</a></li>
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i> info@example.com</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Aptech learning,North Karachi,Karachi</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="mb-4">Subscribe to our newsletter for updates, news, and exclusive offers.</p>
+                    <form class="mb-4">
+                        <div class="input-group">
+                            <input type="email" class="form-control newsletter-input" placeholder="Enter your email">
+                            <button class="btn btn-subscribe text-white" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom mt-5">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="last">&copy; All Rights Reserved. Designed by : <span>Hassan Misbah, Owais Khan,
+                                Arsalan Zaman, Kashan and Abu Darda</span></p>
+                    </div>
+                    <!-- <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by <a
+                            href="#">YourBrand</a></p>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
