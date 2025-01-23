@@ -1,0 +1,12 @@
+![navbarscreenshot](https://github.com/user-attachments/assets/397c4480-8a60-407a-93f6-e19044e8a0fe)
+![homescrrenshot](https://github.com/user-attachments/assets/6ef955a4-2db2-4363-9cbb-47b07d250cf0)
+![todayinworld](https://github.com/user-attachments/assets/95b7959e-64be-4cd6-bfdf-1864566824ee)
+![aboutscreen](https://github.com/user-attachments/assets/774f77a9-a5ad-4614-94dd-37bd8a359621)
+![sportscreenshot](https://github.com/user-attachments/assets/460c7cdd-2508-40f9-8d24-dd8c2015d036)
+![chinascreen](https://github.com/user-attachments/assets/8da7d2b1-2164-4e6f-b048-8bfb35a55dfa)
+![newyorkscreen](https://github.com/user-attachments/assets/6c9088ed-35b6-4ecf-84ef-48de77a3cb5d)
+![london](https://github.com/user-attachments/assets/05227193-e8ad-4078-86a8-b31ca7c7b669)
+![singaporescreen](https://github.com/user-attachments/assets/f751d7b5-8b1a-46a1-8ee4-6a88a4fa4cc2)
+![contactus](https://github.com/user-attachments/assets/47cd52d4-69bb-46b3-9695-ee48dc049f84)
+![footerscreenshot](https://github.com/user-attachments/assets/f629eb8e-a02f-4f16-8770-af811b71938d)
+
